@@ -1,0 +1,96 @@
+<!Doctype Html>  
+<Html>     
+    <Head>      
+        <Title>     
+            CSUS Calendar survey form
+        </Title> 
+        <link rel="stylesheet" href="style.css">   
+    </Head>  
+
+    <div class="container">
+        <header>
+            <h1 id="title" class="text-center">
+                CSUS Calendar Survey Form
+            </h1>
+            <p id="description" class="text-center">
+                Thank you for taking the time to help us improve.
+            </p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-entry">
+                <label for="name" id="name-label">
+                    Name:
+                </label>
+                <input type="text" name="name" id="name" class="form-control" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-entry">
+                <label for="email" id="email-label">
+                    Email:
+                </label>
+                <input type="email" name="email" id="email" class="form-control" required placeholder="Enter your Email">
+            </div>
+
+            <div class="form-entry">
+                <label for="number" id="number-label">
+                    Age (optional):
+                </label>
+                <input type="number" name="age" id="number" class="form-control" placeholder="Enter your age" min="1" max="100">
+            </div>
+
+            <div class="form-entry">
+                <p>What year are you in?</p>
+                <select name="year" id="dropdown" class="form-control">
+                    <option value="U0">U0</option>
+                    <option value="U1">U1</option>
+                    <option value="U2">U2</option>
+                    <option value="U3">U3</option>
+                    <option value="U3+">U3+</option>
+                </select>
+            </div>
+
+            <div class="form-entry">
+                <p>Would you recommend the CSUS Calendar to a friend?</p>
+                <label>
+                    <input type="radio" name="recommendation" class="input-radio" value="definitely" checked />
+                    Definitely
+                </label>
+                <label>
+                    <input type="radio" name="recommendation" class="input-radio" value="maybe" />
+                    Maybe
+                </label>
+                <label>
+                    <input type="radio" name="recommendation" class="input-radio" value="not-sure" />
+                    Not sure
+                </label>
+            </div>
+            <div class="form-entry">
+                <p>What is your program?</p>
+                <label>
+                    <input type="checkbox" value="computer-science" name="program" class="input-radio">
+                    Computer Science
+                </label>
+                <label>
+                    <input type="checkbox" class="input-radio" value="math" name="program">
+                    Math
+                </label>
+                <label>
+                    <input type="checkbox" value="statistics" name="program" class="input-radio">
+                    Statistics
+                </label>
+                <label>
+                    <input type="checkbox" value="others" name="program" class="input-radio">
+                    Others
+                </label>
+            </div>
+            <div class="form-entry">
+                <p>Additional comments</p>
+                <textarea name="comment" id="comment" class="form-control input-textarea" placeholder="Enter your comments here...">
+                </textarea>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+
+    </div>
+</Html>
