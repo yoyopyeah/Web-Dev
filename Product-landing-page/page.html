@@ -2,16 +2,76 @@
 <Html>     
     <head>
         <title>
-            Product Landing Page
+            BTS Butter Page
         </title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <nav id="header">
-            <img src="#" id="header-img" alt="company logo">
-        </nav>
+        <header id="header">
+            <div id="logo">
+                <img src="Assets/BTS-logo.png" id="header-img" alt="BTS logo"/>
+            </div>            
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li><a class="nav-link" href="#butter-mv">Butter MV</a></li>
+                    <li><a class="nav-link" href="#subscribe">Subscribe</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <section id="gallery">
+                <h3>Gallery</h3>
+                <div class="slider">
+                    <input 
+                        type="radio" name="slide_switch" 
+                        id="slide1" 
+                        checked="checked">
+                    <label for="slide1">
+                        <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.XzXy5HbblAjZ5Y0dYydMzAHaEK?pid=ImgDet&rs=1" alt="BTS Butter teaser" height="60px" width="auto">
+                    </label>
+                    <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.XzXy5HbblAjZ5Y0dYydMzAHaEK?pid=ImgDet&rs=1" alt="BTS Butter teaser">
+                    <input type="radio" name="slide_switch" id="slide2">
+                    <label for="slide2">
+                        <img src="https://s.yimg.com/uu/api/res/1.2/FlrUQnm7wh1k51252LGh4w--~B/aD01MzU7dz0xMDAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/variety.com/73a5654695580b2bcf86dc0c4581ca0d" alt="BTS at Butter press conference" width="auto" height="60px">
+                    </label>
+                    <img src="https://s.yimg.com/uu/api/res/1.2/FlrUQnm7wh1k51252LGh4w--~B/aD01MzU7dz0xMDAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/variety.com/73a5654695580b2bcf86dc0c4581ca0d" alt="BTS at Butter press conference" >
+                    <input 
+                        type="radio" name="slide_switch" 
+                        id="slide3">
+                    <label for="slide3">
+                        <img src="https://staticg.sportskeeda.com/editor/2021/05/4891a-16219569718162-800.jpg" alt="BTS group photo at Butter dance practice" height="60px" width="auto">
+                    </label>
+                    <img src="https://staticg.sportskeeda.com/editor/2021/05/4891a-16219569718162-800.jpg" alt="BTS group photo at Butter dance practice">
+                    <input 
+                        type="radio" name="slide_switch" 
+                        id="slide4">
+                    <label for="slide4">
+                        <img src="https://bandwagon-gig-finder.s3.amazonaws.com/system/tinymce/image/file/2531/content_bts_butter_mv_comeback_2021_break_youtube_views.jpg" alt="Butter concept photo with BTS in track suits" height="60px" width="auto">
+                    </label>
+                    <img src="https://bandwagon-gig-finder.s3.amazonaws.com/system/tinymce/image/file/2531/content_bts_butter_mv_comeback_2021_break_youtube_views.jpg" alt="Butter concept photo with BTS in track suits">
+                </div>
+            </section>
+            <section id="butter-mv">
+                <h3>Butter MV</h3>
+                
+                <!-- <iframe id="video" src="https://www.youtube.com/watch?v=WMweEpGlu_U" width="90%" height="400" frameborder="0" allowfullscreen></iframe> -->
+
+                <iframe id="video" src="//player.bilibili.com/player.html?aid=715710103&bvid=BV1HQ4y1R7LC&cid=341875372&page=1" frameborder="no" scrolling="no"></iframe>
+            </section>
+            <section id="subscribe">
+                <h3>Subscribe</h3>
+                <p>Get the latest news of BTS!</p>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input name="email" type="email" id="email" placeholder="Enter your email" required>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </section>
+        </div>
+        
     </body>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</Html>>
+</Html>
