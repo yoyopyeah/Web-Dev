@@ -166,10 +166,10 @@ input {
     margin: 15px 0;
     background-color: #f1c40f;
     font-weight: 400;
+    cursor: pointer;
 }
 
 #submit:hover {
     background-color: orange;
     transition: background-color 1s;
-    cursor: pointer;
 }
