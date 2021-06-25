@@ -59,6 +59,7 @@ h4 {
 @media only screen and (max-width: 815px) {
     /* For mobile phones */
     #navbar {
+        position: fixed;
         background-color: white;
         top: 0;
         width: 100%;
@@ -66,7 +67,6 @@ h4 {
         z-index: 1;        
         border-right: none;
         border-bottom: solid;
-        border-color: rgba(0, 22, 22, 0.4);
     }
 
     #main-doc {
