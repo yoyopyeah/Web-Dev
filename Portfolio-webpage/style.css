@@ -70,13 +70,17 @@ nav {
 
 #nav-list {
     display: flex;
-    margin-right: 0.9rem;
+    margin-right: 1.5rem;
 }
 
 #nav-list a {
     display: block;
     font-size: 1.3rem;
-    padding: 0.7rem;
+    padding: 1rem 1.5rem;
+}
+
+#nav-list a:hover {
+    background: chocolate;
 }
 
 #welcome-section {
@@ -111,4 +115,108 @@ nav {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 5rem 2rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
 }
+
+.code {
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+}
+
+.project-tile:hover .code {
+    color: #ff7f50;
+}
+
+.project-title {
+    width: 100%;
+    background: var(--main-gray);
+    padding: 0.8rem 0;
+}
+
+.project-image {
+    height: 70vh;;
+    width: 100%;
+    object-fit: cover;
+}
+
+#profile-link {
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    background: var(--main-gray);
+    border-radius: 3px;
+    transition: background 0.3s ease-out;
+}
+
+#profile-link:hover {
+    background: var(--main-red);
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    height: 80vh;
+    background: var(--main-gray);
+}
+
+#contact > h2 {
+    font-size: 3rem;
+}
+
+@media (max-width: 28.75em) {
+    #contact > h2 {
+        font-size: 4rem;
+    }
+}
+
+#contact > p {
+    font-style: italic;
+    color: rgb(218, 216, 216);
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.contact-button {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    margin: 1rem;
+}
+
+.contact-button:hover {
+    transform: translateY(8px);
+}
+
+footer {
+    font-weight: 200;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background: var(--main-gray);
+    border-top: 4px solid var(--main-red);
+}
+
+footer > p {
+    margin: 1rem;
+}
+
+@media (max-width: 28.75em) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
